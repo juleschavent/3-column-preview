@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsl(0, 0%, 95%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* GENERAL */
+body {
+  width: 100vw;
+  min-height: 100vh;
+  height: auto;
+  padding: 2rem;
+  overflow-x: hidden;
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: lightblue;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-width: 35rem;
+  /* margin: auto; */
+}
+
+/* CARD */
+.container__card {
+  padding: 6rem 4rem;
+}
+
+.container__card:first-of-type {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.container__card:nth-of-type(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.container__card:last-of-type {
+  background-color: hsl(179, 100%, 13%);
+}
+
+/* CARD CONTENT */
+.card__picto {
+  margin-bottom: 3rem;
+}
+
+.card__title {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.card__copy {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+/* CARD BUTTON */
+.btn {
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.btn:hover {
+  color: white;
+  box-shadow: 0 0 0 0.25rem hsl(0, 0%, 95%);
+  background-color: transparent;
+}
+
+.btn--yellow {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn--green {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn--blue {
+  color: hsl(179, 100%, 13%);
+}
+
+/* BREAKPOINT */
+@media screen and (min-width: 900px) {
+  .container {
+    flex-direction: row;
+    max-width: 90rem;
+  }
+}
